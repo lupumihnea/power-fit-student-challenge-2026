@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lupumihnea.github.io/power-fit-student-challenge-2026/sitemap.xml
