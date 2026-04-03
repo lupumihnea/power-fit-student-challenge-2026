@@ -1,1 +1,1 @@
-mroe photos to be added.
+more photos to be added.
