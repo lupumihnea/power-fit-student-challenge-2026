@@ -402,36 +402,27 @@
       gap: 14px;
     }
 
-    .poster-visual {
-      position: relative;
-      width: 100%;
+    .hero-side-card {
+      padding: 22px;
       border-radius: 22px;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      overflow: hidden;
-      background: #000000;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(5, 14, 23, 0.72);
     }
 
-    .poster-visual img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .hero-side-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.08rem;
     }
 
-    .poster-badge {
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      z-index: 2;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(4, 10, 17, 0.86);
-      border: 1px solid rgba(183, 255, 241, 0.28);
-      color: var(--accent-strong);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      backdrop-filter: blur(12px);
+    .hero-side-card p {
+      margin: 0 0 12px;
+      color: var(--muted);
+    }
+
+    .hero-side-list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
     }
 
     .prize-box {
@@ -876,17 +867,23 @@
           </div>
         </div>
 
-        <aside class="hero-panel" aria-label="Poster oficial și premii">
-          <div class="poster-visual">
-            <div class="poster-badge">Data actualizată: 15 mai</div>
-            <picture>
-              <source srcset="assets/poster-power-fit-student-challenge-2026.webp" type="image/webp" />
-              <img src="assets/poster-power-fit-student-challenge-2026.png" alt="Poster oficial Power &amp; Fit Student Challenge 2026" loading="eager" />
-            </picture>
+        <aside class="hero-panel" aria-label="Informații rapide și premii">
+          <div class="hero-side-card">
+            <h3>Acces rapid</h3>
+            <p>Am păstrat în partea dreaptă doar informațiile utile pentru înscriere și documentare.</p>
+            <ul class="hero-side-list">
+              <li>Data competiției: 15 mai 2026</li>
+              <li>Ora de start: 11:00</li>
+              <li>Locație: Baza Sportivă a Universității</li>
+              <li>Regulamente separate pentru fiecare probă în secțiunea de mai jos</li>
+            </ul>
+            <div class="hero-actions" style="margin-top:16px; margin-bottom:0;">
+              <a class="btn btn-secondary" href="#regulament">Vezi regulamentele pe probe</a>
+            </div>
           </div>
           <div class="prize-box">
             <p>
-              Premii anunțate pe afișul competiției. Lista poate primi completări odată cu varianta finală a regulamentului.
+              Premii anunțate pentru competiție. Lista poate primi completări odată cu varianta finală a regulamentului.
             </p>
             <div class="prize-list" aria-label="Premii anunțate">
               <div class="prize-item"><strong>Vouchere</strong><span>Premii utile pentru participanți.</span></div>
