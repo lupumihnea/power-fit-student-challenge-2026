@@ -14,10 +14,10 @@
   <meta property="og:title" content="Power &amp; Fit Student Challenge 2026" />
   <meta
     property="og:description"
-    content="21 mai 2026, ora 11:00, la Baza Sportivă a Universității „Vasile Alecsandri” din Bacău. Înscriere prin Google Forms."
+    content="15 mai 2026, ora 11:00, la Baza Sportivă a Universității „Vasile Alecsandri” din Bacău. Înscriere prin Google Forms."
   />
-  <meta property="og:url" content="https://lupumihnea.github.io/power-fit-student-challenge-2026/" />
-  <meta property="og:image" content="https://lupumihnea.github.io/power-fit-student-challenge-2026/assets/poster-power-fit-student-challenge-2026.png" />
+  <meta property="og:url" content="https://www.powerfitstudent.ro/" />
+  <meta property="og:image" content="https://www.powerfitstudent.ro/assets/poster-power-fit-student-challenge-2026.png" />
   <meta property="og:image:alt" content="Poster oficial Power &amp; Fit Student Challenge 2026" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Power &amp; Fit Student Challenge 2026" />
@@ -25,16 +25,16 @@
     name="twitter:description"
     content="Competiție sportivă pentru studenți universitari. Înscriere prin Google Forms."
   />
-  <meta name="twitter:image" content="https://lupumihnea.github.io/power-fit-student-challenge-2026/assets/poster-power-fit-student-challenge-2026.png" />
-  <link rel="canonical" href="https://lupumihnea.github.io/power-fit-student-challenge-2026/" />
+  <meta name="twitter:image" content="https://www.powerfitstudent.ro/assets/poster-power-fit-student-challenge-2026.png" />
+  <link rel="canonical" href="https://www.powerfitstudent.ro/" />
   <link rel="icon" href="assets/logo-circle.jfif" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Event",
       "name": "Power & Fit Student Challenge 2026",
-      "startDate": "2026-05-21T11:00:00+03:00",
-      "endDate": "2026-05-21T19:00:00+03:00",
+      "startDate": "2026-05-15T11:00:00+03:00",
+      "endDate": "2026-05-15T19:00:00+03:00",
       "eventStatus": "https://schema.org/EventScheduled",
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
       "description": "Competiție sportivă pentru studenți universitari, organizată de cercul științific studențesc Power & Fit Student, în cadrul Universității „Vasile Alecsandri” din Bacău.",
@@ -44,7 +44,7 @@
         "url": "https://maps.app.goo.gl/F5ubwgqqgmEVdqSv6"
       },
       "image": [
-        "https://lupumihnea.github.io/power-fit-student-challenge-2026/assets/poster-power-fit-student-challenge-2026.png"
+        "https://www.powerfitstudent.ro/assets/poster-power-fit-student-challenge-2026.png"
       ],
       "organizer": {
         "@type": "Organization",
@@ -60,10 +60,10 @@
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://forms.gle/SNfrzNCv6brfnevi9",
+        "url": "https://forms.gle/nNV4De6yV3zfDYms5",
         "availability": "https://schema.org/InStock"
       },
-      "url": "https://lupumihnea.github.io/power-fit-student-challenge-2026/"
+      "url": "https://www.powerfitstudent.ro/"
     }
   </script>
   <style>
@@ -609,6 +609,108 @@
       color: var(--muted);
     }
 
+    .rules-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .rule-link {
+      display: block;
+      padding: 14px 16px;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.035);
+      color: var(--muted);
+      transition: 0.2s ease;
+    }
+
+    .rule-link:hover {
+      color: var(--text);
+      border-color: rgba(183, 255, 241, 0.24);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .rules-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .rule-item {
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .rule-item summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 22px;
+      font-weight: 700;
+    }
+
+    .rule-item summary::-webkit-details-marker { display: none; }
+
+    .rule-item summary::after {
+      content: "+";
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--accent-strong);
+      font-size: 1rem;
+    }
+
+    .rule-item[open] summary::after {
+      content: "-";
+    }
+
+    .rule-body {
+      padding: 0 22px 22px;
+      color: var(--muted);
+    }
+
+    .rule-body p {
+      margin: 0 0 10px;
+    }
+
+    .rule-body ul {
+      margin: 0 0 10px;
+      padding-left: 18px;
+    }
+
+    .rule-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .rule-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--accent-strong);
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
     .cta {
       padding: 38px;
       background:
@@ -734,7 +836,7 @@
         <a href="#faq">FAQ</a>
         <a href="#inscriere">Înscriere</a>
       </nav>
-      <a class="btn btn-primary" href="https://forms.gle/SNfrzNCv6brfnevi9" target="_blank" rel="noopener noreferrer">Înscriere</a>
+      <a class="btn btn-primary" href="https://forms.gle/nNV4De6yV3zfDYms5" target="_blank" rel="noopener noreferrer">Înscriere</a>
     </div>
   </header>
 
@@ -742,14 +844,14 @@
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow">21 mai 2026 • ora 11:00 • Bacău</div>
+          <div class="eyebrow">15 mai 2026 • ora 11:00 • Bacău</div>
           <h1>Power &amp; Fit Student Challenge 2026</h1>
           <p class="lead">
             Competiție sportivă pentru studenți universitari, cu înscriere rapidă prin Google Forms și informații
             esențiale păstrate clar, într-un singur loc.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://forms.gle/SNfrzNCv6brfnevi9" target="_blank" rel="noopener noreferrer">Deschide formularul de înscriere</a>
+            <a class="btn btn-primary" href="https://forms.gle/nNV4De6yV3zfDYms5" target="_blank" rel="noopener noreferrer">Deschide formularul de înscriere</a>
             <a class="btn btn-secondary" href="#probe">Vezi probele</a>
             <a class="btn btn-secondary" href="https://maps.app.goo.gl/F5ubwgqqgmEVdqSv6" target="_blank" rel="noopener noreferrer">Vezi locația pe hartă</a>
           </div>
@@ -761,7 +863,7 @@
           <div class="mini-meta">
             <div class="meta-box">
               <span class="meta-label">Data</span>
-              <div class="meta-value">21 mai 2026</div>
+              <div class="meta-value">15 mai 2026</div>
             </div>
             <div class="meta-box">
               <span class="meta-label">Locație</span>
@@ -776,7 +878,7 @@
 
         <aside class="hero-panel" aria-label="Poster oficial și premii">
           <div class="poster-visual">
-            <div class="poster-badge">Data actualizată: 21 mai</div>
+            <div class="poster-badge">Data actualizată: 15 mai</div>
             <picture>
               <source srcset="assets/poster-power-fit-student-challenge-2026.webp" type="image/webp" />
               <img src="assets/poster-power-fit-student-challenge-2026.png" alt="Poster oficial Power &amp; Fit Student Challenge 2026" loading="eager" />
@@ -819,7 +921,7 @@
           <article class="card">
             <div class="chip">Format</div>
             <h3>O singură zi de competiție</h3>
-            <p>Startul este anunțat pentru ora 11:00, pe 21 mai 2026, iar desfășurătorul complet va fi publicat ulterior.</p>
+            <p>Startul este anunțat pentru ora 11:00, pe 15 mai 2026, iar desfășurătorul complet va fi publicat ulterior.</p>
           </article>
 
           <article class="card">
@@ -841,7 +943,7 @@
         <div class="section-head">
           <div>
             <h2>Numărătoare inversă</h2>
-            <p>Cronometrul de mai jos urmărește timpul rămas până la startul competiției din 21 mai 2026, ora 11:00.</p>
+            <p>Cronometrul de mai jos urmărește timpul rămas până la startul competiției din 15 mai 2026, ora 11:00.</p>
           </div>
         </div>
 
@@ -865,15 +967,60 @@
         </div>
 
         <div class="grid-3">
-          <article class="card"><div class="chip">Forță</div><h3>Împins la piept</h3><p>Probă de forță cu detalii tehnice și arbitraj comunicate în regulamentul final.</p></article>
-          <article class="card"><div class="chip">Forță</div><h3>Tracțiuni</h3><p>La băieți, această probă se desfășoară sub formă de tracțiuni.</p></article>
-          <article class="card"><div class="chip">Rezistență</div><h3>Flotări</h3><p>Probă individuală de rezistență și control al execuției.</p></article>
-          <article class="card"><div class="chip">Stabilitate</div><h3>Plank</h3><p>Provocare statică, centrată pe control corporal și rezistență.</p></article>
-          <article class="card"><div class="chip">Tehnică</div><h3>Aruncarea mingii medicinale</h3><p>Probă de explozie și coordonare, cu criterii finale TBA.</p></article>
-          <article class="card"><div class="chip">Duel</div><h3>Skanderberg</h3><p>Probă directă de forță și control, conform formatului stabilit de organizatori.</p></article>
-          <article class="card"><div class="chip">Rezistență</div><h3>Menținere</h3><p>La fete, componenta corespunzătoare probei este menținerea, cu detalii finale TBA.</p></article>
-          <article class="card"><div class="chip">Echipă</div><h3>Trasul frânghiei</h3><p>Probă de echipă, bazată pe coordonare, ritm și forță colectivă.</p></article>
-          <article class="card"><div class="chip">Combinată</div><h3>Circuit</h3><p>Probă dinamică ce pune accent pe ritm, mobilitate și adaptare la efort.</p></article>
+          <article class="card">
+            <div class="chip">Forță</div>
+            <h3>Împins la piept</h3>
+            <p>Probă de forță cu detalii tehnice și arbitraj comunicate în regulamentul final.</p>
+            <p style="margin-top:12px;"><a class="rule-link" href="#reg-impins">Vezi regulamentul probei</a></p>
+          </article>
+          <article class="card">
+            <div class="chip">Forță</div>
+            <h3>Tracțiuni</h3>
+            <p>La băieți, această probă se desfășoară sub formă de tracțiuni.</p>
+            <p style="margin-top:12px;"><a class="rule-link" href="#reg-tractiuni">Vezi regulamentul probei</a></p>
+          </article>
+          <article class="card">
+            <div class="chip">Rezistență</div>
+            <h3>Flotări</h3>
+            <p>Probă individuală de rezistență și control al execuției.</p>
+            <p style="margin-top:12px;"><a class="rule-link" href="#reg-flotari">Vezi regulamentul probei</a></p>
+          </article>
+          <article class="card">
+            <div class="chip">Stabilitate</div>
+            <h3>Plank</h3>
+            <p>Provocare statică, centrată pe control corporal și rezistență.</p>
+            <p style="margin-top:12px;"><a class="rule-link" href="#reg-plank">Vezi regulamentul probei</a></p>
+          </article>
+          <article class="card">
+            <div class="chip">Tehnică</div>
+            <h3>Aruncarea mingii medicinale</h3>
+            <p>Probă de explozie și coordonare, cu criterii finale TBA.</p>
+            <p style="margin-top:12px;"><a class="rule-link" href="#reg-minge">Vezi regulamentul probei</a></p>
+          </article>
+          <article class="card">
+            <div class="chip">Duel</div>
+            <h3>Skanderberg</h3>
+            <p>Probă directă de forță și control, conform formatului stabilit de organizatori.</p>
+            <p style="margin-top:12px;"><a class="rule-link" href="#reg-skanderberg">Vezi regulamentul probei</a></p>
+          </article>
+          <article class="card">
+            <div class="chip">Rezistență</div>
+            <h3>Menținere</h3>
+            <p>La fete, componenta corespunzătoare probei este menținerea, cu detalii finale TBA.</p>
+            <p style="margin-top:12px;"><a class="rule-link" href="#reg-mentinere">Vezi regulamentul probei</a></p>
+          </article>
+          <article class="card">
+            <div class="chip">Echipă</div>
+            <h3>Trasul frânghiei</h3>
+            <p>Probă de echipă, bazată pe coordonare, ritm și forță colectivă.</p>
+            <p style="margin-top:12px;"><a class="rule-link" href="#reg-franghie">Vezi regulamentul probei</a></p>
+          </article>
+          <article class="card">
+            <div class="chip">Combinată</div>
+            <h3>Circuit</h3>
+            <p>Probă dinamică ce pune accent pe ritm, mobilitate și adaptare la efort.</p>
+            <p style="margin-top:12px;"><a class="rule-link" href="#reg-circuit">Vezi regulamentul probei</a></p>
+          </article>
         </div>
       </div>
     </section>
@@ -889,7 +1036,7 @@
 
         <div class="timeline">
           <div class="timeline-item">
-            <strong>21 mai 2026</strong>
+            <strong>15 mai 2026</strong>
             <div>
               <div><strong>Start competiție:</strong> 11:00</div>
               <div class="muted">Ordinea probelor, intervalele și pauzele vor fi publicate imediat ce desfășurătorul final este gata.</div>
@@ -904,7 +1051,7 @@
         <div class="section-head">
           <div>
             <h2>Regulament</h2>
-            <p>Secțiunea rămâne scurtă până la publicarea versiunii complete, dar păstrează condițiile esențiale de participare.</p>
+            <p>Aici găsești atât condițiile generale, cât și o structură separată pentru regulamentul fiecărei probe.</p>
           </div>
         </div>
 
@@ -926,6 +1073,170 @@
               de departajare și alte detalii logistice.
             </p>
           </article>
+        </div>
+
+        <div class="notice">
+          <strong>Regulamente pe probe</strong>
+          Fiecare probă are mai jos propria zonă de documentare. În această etapă am organizat pagina pe probe, astfel
+          încât textul final sau eventualele PDF-uri să poată fi adăugate rapid, exact acolo unde le caută participanții.
+        </div>
+
+        <div class="rules-nav" aria-label="Acces rapid la regulamentele pe probe">
+          <a class="rule-link" href="#reg-impins">Împins la piept</a>
+          <a class="rule-link" href="#reg-tractiuni">Tracțiuni</a>
+          <a class="rule-link" href="#reg-flotari">Flotări</a>
+          <a class="rule-link" href="#reg-plank">Plank</a>
+          <a class="rule-link" href="#reg-minge">Aruncarea mingii medicinale</a>
+          <a class="rule-link" href="#reg-skanderberg">Skanderberg</a>
+          <a class="rule-link" href="#reg-mentinere">Menținere</a>
+          <a class="rule-link" href="#reg-franghie">Trasul frânghiei</a>
+          <a class="rule-link" href="#reg-circuit">Circuit</a>
+        </div>
+
+        <div class="rules-list" aria-label="Regulamente separate pentru fiecare probă">
+          <details class="rule-item" id="reg-impins">
+            <summary>Împins la piept</summary>
+            <div class="rule-body">
+              <div class="rule-meta">
+                <span class="rule-tag">Regulament probă</span>
+                <span class="rule-tag">Detalii finale TBA</span>
+              </div>
+              <p>Proba are secțiune separată de regulament și va include formatul exact de desfășurare, tentativele permise, arbitrajul și condițiile de validare.</p>
+              <ul>
+                <li>Categoria, greutatea de lucru și ordinea participanților vor fi publicate după închiderea înscrierilor.</li>
+                <li>Execuțiile vor fi validate exclusiv de arbitrii desemnați de organizatori.</li>
+                <li>Orice criteriu de descalificare sau reluare va apărea în versiunea finală a regulamentului probei.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="rule-item" id="reg-tractiuni">
+            <summary>Tracțiuni</summary>
+            <div class="rule-body">
+              <div class="rule-meta">
+                <span class="rule-tag">Regulament probă</span>
+                <span class="rule-tag">Băieți</span>
+              </div>
+              <p>Pentru participanții băieți, această probă va fi documentată separat sub forma regulamentului de tracțiuni.</p>
+              <ul>
+                <li>Regulamentul final va stabili priza permisă, amplitudinea corectă și criteriile de repetare validă.</li>
+                <li>Vor fi precizate clar situațiile în care execuția nu se ia în calcul.</li>
+                <li>Ordinea de intrare și eventualele departajări vor fi afișate în versiunea finală.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="rule-item" id="reg-flotari">
+            <summary>Flotări</summary>
+            <div class="rule-body">
+              <div class="rule-meta">
+                <span class="rule-tag">Regulament probă</span>
+                <span class="rule-tag">Rezistență</span>
+              </div>
+              <p>Regulamentul acestei probe va descrie poziția de start, ritmul acceptat, standardul execuției și modul de numărare.</p>
+              <ul>
+                <li>Se vor publica standardul de coborâre și criteriul minim pentru o repetare validă.</li>
+                <li>Arbitrajul va urmări tehnica, nu doar numărul final de repetări.</li>
+                <li>Orice limită de timp sau format de serie va fi comunicat în documentul final al probei.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="rule-item" id="reg-plank">
+            <summary>Plank</summary>
+            <div class="rule-body">
+              <div class="rule-meta">
+                <span class="rule-tag">Regulament probă</span>
+                <span class="rule-tag">Statică</span>
+              </div>
+              <p>Proba de plank va avea regulament separat pentru poziția corectă, menținerea aliniamentului și condițiile de oprire.</p>
+              <ul>
+                <li>Documentul final va clarifica poziția de start și momentele în care timpul se oprește.</li>
+                <li>Se vor preciza corecțiile permise și numărul de avertismente acceptate.</li>
+                <li>Rezultatele vor fi ordonate în funcție de timpul validat de arbitraj.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="rule-item" id="reg-minge">
+            <summary>Aruncarea mingii medicinale</summary>
+            <div class="rule-body">
+              <div class="rule-meta">
+                <span class="rule-tag">Regulament probă</span>
+                <span class="rule-tag">Tehnică</span>
+              </div>
+              <p>Regulamentul va detalia tipul de aruncare acceptat, poziția de plecare, numărul de încercări și modul de măsurare.</p>
+              <ul>
+                <li>Greutatea mingii și modul de înregistrare a celei mai bune încercări vor fi comunicate oficial.</li>
+                <li>Fiecare participant va concura după același standard de execuție și validare.</li>
+                <li>Toate reperele de măsurare vor fi anunțate înainte de startul probei.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="rule-item" id="reg-skanderberg">
+            <summary>Skanderberg</summary>
+            <div class="rule-body">
+              <div class="rule-meta">
+                <span class="rule-tag">Regulament probă</span>
+                <span class="rule-tag">Duel</span>
+              </div>
+              <p>Proba de skanderberg va avea regulament propriu privind poziția de start, desfășurarea duelurilor și criteriile de câștig.</p>
+              <ul>
+                <li>Vor fi publicate formatul confruntărilor și sistemul de eliminare sau punctaj.</li>
+                <li>Poziția mâinilor, startul și faulturile vor fi definite explicit în varianta finală.</li>
+                <li>Arbitrii vor avea decizia finală asupra validării fiecărui duel.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="rule-item" id="reg-mentinere">
+            <summary>Menținere</summary>
+            <div class="rule-body">
+              <div class="rule-meta">
+                <span class="rule-tag">Regulament probă</span>
+                <span class="rule-tag">Fete</span>
+              </div>
+              <p>Pentru participantele fete, regulamentul separat de menținere va explica poziția corectă și condițiile de păstrare a timpului valid.</p>
+              <ul>
+                <li>Poziția exactă și modul de pornire a cronometrării vor fi definite în documentul final.</li>
+                <li>Se vor publica abaterile care duc la avertisment sau oprirea probei.</li>
+                <li>Clasamentul se va face după timpul validat conform arbitrajului.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="rule-item" id="reg-franghie">
+            <summary>Trasul frânghiei</summary>
+            <div class="rule-body">
+              <div class="rule-meta">
+                <span class="rule-tag">Regulament probă</span>
+                <span class="rule-tag">Echipă</span>
+              </div>
+              <p>Această probă va avea regulament distinct pentru componența echipelor, poziționare, start și condițiile de victorie.</p>
+              <ul>
+                <li>Organizatorii vor preciza numărul de participanți per echipă și ordinea meciurilor.</li>
+                <li>Vor fi detaliate clar startul valid, faulturile și situațiile de reluare.</li>
+                <li>Orice structură de tablou sau sistem de eliminare va fi comunicată înainte de probă.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="rule-item" id="reg-circuit">
+            <summary>Circuit</summary>
+            <div class="rule-body">
+              <div class="rule-meta">
+                <span class="rule-tag">Regulament probă</span>
+                <span class="rule-tag">Combinată</span>
+              </div>
+              <p>Regulamentul circuitului va avea secțiune proprie pentru traseu, penalizări, cronometrare și condițiile de încheiere a probei.</p>
+              <ul>
+                <li>Ordinea elementelor din circuit și eventualele penalizări vor apărea în documentul final.</li>
+                <li>Participanții vor primi aceleași repere de start, final și validare.</li>
+                <li>Clasamentul se va baza pe timpul final valid, conform regulilor publicate de organizatori.</li>
+              </ul>
+            </div>
+          </details>
         </div>
       </div>
     </section>
@@ -978,7 +1289,7 @@
             </div>
           </div>
           <div class="hero-actions" style="margin-bottom: 18px;">
-            <a class="btn btn-primary" href="https://forms.gle/SNfrzNCv6brfnevi9" target="_blank" rel="noopener noreferrer">Completează formularul</a>
+            <a class="btn btn-primary" href="https://forms.gle/nNV4De6yV3zfDYms5" target="_blank" rel="noopener noreferrer">Completează formularul</a>
             <a class="btn btn-secondary" href="https://maps.app.goo.gl/F5ubwgqqgmEVdqSv6" target="_blank" rel="noopener noreferrer">Deschide locația pe hartă</a>
           </div>
           <div class="grid-3">
@@ -1014,11 +1325,11 @@
   </footer>
 
   <div class="mobile-cta">
-    <a class="btn btn-primary" href="https://forms.gle/SNfrzNCv6brfnevi9" target="_blank" rel="noopener noreferrer">Înscriere prin Google Forms</a>
+    <a class="btn btn-primary" href="https://forms.gle/nNV4De6yV3zfDYms5" target="_blank" rel="noopener noreferrer">Înscriere prin Google Forms</a>
   </div>
 
   <script>
-    const eventDate = new Date("2026-05-21T11:00:00+03:00").getTime();
+    const eventDate = new Date("2026-05-15T11:00:00+03:00").getTime();
     const countdownStatus = document.getElementById("countdown-status");
     const ids = {
       days: document.getElementById("days"),
