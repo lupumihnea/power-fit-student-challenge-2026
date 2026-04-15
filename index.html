@@ -414,6 +414,31 @@
       line-height: 1.25;
     }
 
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 9px 14px;
+      margin-top: 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(120, 246, 215, 0.34);
+      background: rgba(120, 246, 215, 0.12);
+      box-shadow: 0 10px 24px rgba(120, 246, 215, 0.12);
+      color: var(--accent-strong);
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      transition: color 0.2s ease, transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .contact-link:hover {
+      color: #051019;
+      background: linear-gradient(135deg, var(--accent-strong), var(--accent));
+      border-color: transparent;
+      transform: translateY(-2px);
+    }
+
     .hero-panel {
       padding: 18px;
       display: flex;
@@ -549,6 +574,11 @@
       margin: 0;
       max-width: 54ch;
       color: var(--muted);
+    }
+
+    .section-head.centered {
+      justify-content: center;
+      text-align: center;
     }
 
     .grid-2,
@@ -901,10 +931,9 @@
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow">15 mai 2026 • ora 11:00 • Bacău</div>
           <h1>Power &amp; Fit Student Challenge 2026</h1>
           <p class="lead">
-            Power &amp; Fit Student Challenge 2026 este o competiție sportivă pentru studenți universitari din Bacău, cu probe de fitness și multisport precum flotări, tracțiuni, plank, skanderberg și traseu. Înscrie-te acum prin formularul oficial.
+            Power &amp; Fit Student Challenge 2026 este o competiție sportivă pentru studenții Universității „Vasile Alecsandri” din Bacău. Înscrie-te acum!
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://forms.gle/nNV4De6yV3zfDYms5" target="_blank" rel="noopener noreferrer">Deschide formularul de înscriere</a>
@@ -913,8 +942,8 @@
           </div>
           <ul class="hero-list">
             <li>Înscrierea se face exclusiv prin linkul de Google Forms din această pagină.</li>
-            <li>Participarea este destinată studenților universitari, inclusiv sportivilor legitimați.</li>
-            <li>Regulamentele pe probe sunt publicate mai jos, iar detaliile logistice rămase TBA vor fi actualizate tot aici.</li>
+            <li>Participarea este destinată studenților universitari.</li>
+            <li>Regulamentele pe probe sunt publicate mai jos.</li>
           </ul>
           <div class="mini-meta">
             <div class="meta-box">
@@ -927,7 +956,7 @@
             </div>
             <div class="meta-box">
               <span class="meta-label">Contact</span>
-              <div class="meta-value">Cristina Andrei • 0766 246 561</div>
+              <div class="meta-value">Cristina Andrei • <a class="contact-link" href="https://wa.me/40766246561" target="_blank" rel="noopener noreferrer">0766 246 561</a></div>
             </div>
           </div>
         </div>
@@ -938,10 +967,6 @@
               <div class="poster-media">
                 <img src="assets/afis-competitie.webp" alt="Afișul oficial al competiției Power &amp; Fit Student Challenge 2026" loading="eager" fetchpriority="high" decoding="async" width="1414" height="2000" />
               </div>
-              <figcaption class="poster-caption">
-                <h3>Afișul oficial al competiției</h3>
-                <p>Afișul reunește rapid data, ora, locația și probele principale. Pe mobil se redimensionează integral, fără tăiere.</p>
-              </figcaption>
             </figure>
           </div>
           <div class="prize-box">
@@ -962,12 +987,9 @@
 
     <section id="despre">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head centered">
           <div>
             <h2>Despre competiție</h2>
-            <p>
-              Power &amp; Fit Student Challenge 2026 este o competiție sportivă studențească organizată în Bacău, România, pentru comunitatea universitară interesată de fitness, calistenie și probe funcționale.
-            </p>
           </div>
         </div>
 
@@ -975,35 +997,30 @@
           <article class="card">
             <div class="chip">Cui se adresează</div>
             <h3>Studenților universitari</h3>
-            <p>Evenimentul se adresează studenților universitari care vor să participe la o competiție sportivă reală, cu accent pe forță, rezistență și spirit competitiv.</p>
+            <p>Evenimentul se adresează studenților Universității „Vasile Alecsandri” din Bacău.</p>
           </article>
 
           <article class="card">
             <div class="chip">Format</div>
             <h3>O singură zi de competiție</h3>
-            <p>Competiția are loc pe 15 mai 2026, de la ora 11:00, și reunește probe individuale și de echipă într-un format universitar simplu și clar.</p>
+            <p>Competiția are loc pe 15 mai 2026, de la ora 11:00.</p>
           </article>
 
           <article class="card">
             <div class="chip">Înscriere</div>
             <h3>Totul pornește din formular</h3>
-            <p>Înscrierea oficială se face online, prin Google Forms, direct din această pagină, pentru participanții la Power &amp; Fit Student Challenge.</p>
+            <p>Înscrierea oficială se face online, prin Google Forms, direct din această pagină.</p>
           </article>
         </div>
 
-        <div class="notice">
-          <strong>Important</strong>
-          Sportivii legitimați au voie să participe. Pagina concentrează informațiile esențiale pentru înscriere, regulament și localizarea competiției sportive universitare din Bacău.
-        </div>
       </div>
     </section>
 
     <section id="countdown">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head centered">
           <div>
             <h2>Numărătoare inversă</h2>
-            <p>Cronometrul de mai jos urmărește timpul rămas până la startul competiției din 15 mai 2026, ora 11:00.</p>
           </div>
         </div>
 
@@ -1013,16 +1030,14 @@
           <div class="count-item"><strong id="minutes">--</strong><span>Minute</span></div>
           <div class="count-item"><strong id="seconds">--</strong><span>Secunde</span></div>
         </div>
-        <p id="countdown-status" class="small muted center">Cronometrul este orientativ și se actualizează automat.</p>
       </div>
     </section>
 
     <section id="probe">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head centered">
           <div>
             <h2>Probe</h2>
-            <p>Competiția include împins la piept, tracțiuni, flotări, plank, aruncarea mingii medicinale, skanderberg, menținere, trasul frânghiei și traseu. Ordinea finală a probelor rămâne TBA.</p>
           </div>
         </div>
 
@@ -1087,10 +1102,9 @@
 
     <section id="program">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head centered">
           <div>
             <h2>Program</h2>
-            <p>Competiția se desfășoară într-o singură zi. Ora de start este confirmată, iar restul programului rămâne TBA.</p>
           </div>
         </div>
 
@@ -1099,7 +1113,7 @@
             <strong>15 mai 2026</strong>
             <div>
               <div><strong>Start competiție:</strong> 11:00</div>
-              <div class="muted">Ordinea probelor, intervalele și pauzele vor fi publicate imediat ce desfășurătorul final este gata.</div>
+              <div class="muted">Ordinea probelor, intervalele și pauzele vor fi prezentate la fața locului.</div>
             </div>
           </div>
         </div>
@@ -1108,7 +1122,7 @@
 
     <section id="regulament">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head centered">
           <div>
             <h2>Regulament</h2>
             <p>Aici găsești atât condițiile generale, cât și o structură separată pentru regulamentul fiecărei probe.</p>
@@ -1127,30 +1141,12 @@
           </article>
 
           <article class="card">
-            <h3>Ce rămâne TBA</h3>
+            <h3>Format general</h3>
             <p>
-              Rămân de confirmat doar câteva detalii logistice și elementele finale de la proba de traseu, inclusiv
-              distanțele exacte pe fiecare secțiune.
+              Probele se vor desfășura pe categorii feminin și masculin, iar pentru fiecare probă vor fi premiate
+              locurile I, II și III, în condițiile în care se strâng cel puțin 3 concurenți.
             </p>
           </article>
-        </div>
-
-        <div class="notice">
-          <strong>Regulamente pe probe</strong>
-          Fiecare probă are mai jos propriul regulament. În acest moment, toate regulile principale sunt publicate aici,
-          iar doar proba de traseu mai are câteva detalii tehnice marcate separat ca TBA.
-        </div>
-
-        <div class="rules-nav" aria-label="Acces rapid la regulamentele pe probe">
-          <a class="rule-link" href="#reg-impins">Împins la piept</a>
-          <a class="rule-link" href="#reg-tractiuni">Tracțiuni</a>
-          <a class="rule-link" href="#reg-flotari">Flotări</a>
-          <a class="rule-link" href="#reg-plank">Plank</a>
-          <a class="rule-link" href="#reg-minge">Aruncarea mingii medicinale</a>
-          <a class="rule-link" href="#reg-skanderberg">Skanderberg</a>
-          <a class="rule-link" href="#reg-mentinere">Menținere</a>
-          <a class="rule-link" href="#reg-franghie">Trasul frânghiei</a>
-          <a class="rule-link" href="#reg-traseu">Traseu</a>
         </div>
 
         <div class="rules-list" aria-label="Regulamente separate pentru fiecare probă">
@@ -1324,7 +1320,7 @@
 
     <section id="locatie">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head centered">
           <div>
             <h2>Locație</h2>
             <p>Power &amp; Fit Student Challenge 2026 are loc în Bacău, România, la Baza Sportivă a Universității „Vasile Alecsandri” din Bacău.</p>
@@ -1335,7 +1331,7 @@
           <article class="card">
             <div class="chip">Bacău, România</div>
             <h3>Baza Sportivă a Universității</h3>
-            <p>Locația confirmată pentru competiția sportivă de studenți este Baza Sportivă a Universității „Vasile Alecsandri” din Bacău, un punct central pentru participanți și susținători.</p>
+            <p>Locația confirmată pentru competiția sportivă de studenți este Baza Sportivă a Universității „Vasile Alecsandri” din Bacău.</p>
           </article>
 
           <article class="card">
@@ -1378,8 +1374,8 @@
             <p><a href="https://maps.app.goo.gl/F5ubwgqqgmEVdqSv6" target="_blank" rel="noopener noreferrer">La Baza Sportivă a Universității „Vasile Alecsandri” din Bacău, România.</a></p>
           </div>
           <div class="faq-item">
-            <h3>Când apare programul complet?</h3>
-            <p>Imediat ce organizatorii finalizează desfășurătorul. Până atunci, restul programului rămâne TBA.</p>
+            <h3>Pot participa doar la unele probe?</h3>
+            <p>Da, poți să alegi la ce probe participi.</p>
           </div>
           <div class="faq-item">
             <h3>Cum pot cere informații suplimentare?</h3>
@@ -1405,7 +1401,7 @@
           <div class="grid-3">
             <div class="card"><h3>Formular</h3><p>Înscriere oficială prin Google Forms.</p></div>
             <div class="card"><h3>Program</h3><p>Start la 11:00. Restul desfășurătorului rămâne TBA.</p></div>
-            <div class="card"><h3>Contact</h3><p>Cristina Andrei: <a href="tel:+40766246561">0766 246 561</a></p></div>
+            <div class="card"><h3>Contact</h3><p>Cristina Andrei</p><p><a class="contact-link" href="https://wa.me/40766246561" target="_blank" rel="noopener noreferrer">0766 246 561</a></p></div>
           </div>
         </div>
       </div>
