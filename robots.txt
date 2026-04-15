@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+# Sitemap pentru indexarea paginii oficiale
 Sitemap: https://www.powerfitstudent.ro/sitemap.xml
