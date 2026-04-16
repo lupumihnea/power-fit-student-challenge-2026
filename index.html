@@ -24,7 +24,7 @@
     content="Competiție sportivă universitară în Bacău, cu flotări, tracțiuni, plank, skanderberg și traseu. Înscriere online prin formularul oficial."
   />
   <meta property="og:url" content="https://www.powerfitstudent.ro/" />
-  <meta property="og:image" content="https://www.powerfitstudent.ro/assets/afis-competitie-site.jfif" />
+  <meta property="og:image" content="https://www.powerfitstudent.ro/assets/afis-competitie-site.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:alt" content="Afiș oficial Power &amp; Fit Student Challenge 2026" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -34,12 +34,13 @@
     content="Competiție sportivă universitară în Bacău. Înscriere online la Power &amp; Fit Student Challenge 2026."
   />
   <meta name="twitter:url" content="https://www.powerfitstudent.ro/" />
-  <meta name="twitter:image" content="https://www.powerfitstudent.ro/assets/afis-competitie-site.jfif" />
+  <meta name="twitter:image" content="https://www.powerfitstudent.ro/assets/afis-competitie-site.jpg" />
   <meta name="twitter:image:alt" content="Afiș oficial Power &amp; Fit Student Challenge 2026" />
   <link rel="canonical" href="https://www.powerfitstudent.ro/" />
   <link rel="alternate" hreflang="ro-RO" href="https://www.powerfitstudent.ro/" />
   <link rel="alternate" hreflang="x-default" href="https://www.powerfitstudent.ro/" />
-  <link rel="icon" href="assets/logo-circle.jfif" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -63,7 +64,7 @@
         "url": "https://maps.app.goo.gl/F5ubwgqqgmEVdqSv6"
       },
       "image": [
-        "https://www.powerfitstudent.ro/assets/afis-competitie-site.jfif"
+        "https://www.powerfitstudent.ro/assets/afis-competitie-site.jpg"
       ],
       "organizer": {
         "@type": "Organization",
@@ -100,7 +101,10 @@
     }
 
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
+    @media (prefers-reduced-motion: no-preference) {
+      html { scroll-behavior: smooth; }
+    }
 
     body {
       margin: 0;
@@ -933,6 +937,17 @@
       50% { transform: scale(1.2); opacity: 1; }
     }
 
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
     .cta {
       padding: 38px;
       background:
@@ -1098,7 +1113,7 @@
           <div class="poster-card">
             <figure>
               <div class="poster-media">
-                <img src="assets/afis-competitie-site.jfif" alt="Afișul oficial al competiției Power &amp; Fit Student Challenge 2026" loading="eager" fetchpriority="high" decoding="async" width="1414" height="2000" />
+                <img src="assets/afis-competitie-site.jpg" alt="Afișul oficial al competiției Power &amp; Fit Student Challenge 2026" loading="eager" fetchpriority="high" decoding="async" width="1414" height="2000" />
               </div>
             </figure>
           </div>
