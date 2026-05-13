@@ -46,7 +46,7 @@
       "@context": "https://schema.org",
       "@type": "Event",
       "name": "Power & Fit Student Challenge 2026",
-      "startDate": "2026-05-15T11:00:00+03:00",
+      "startDate": "2026-05-15T10:00:00+03:00",
       "eventStatus": "https://schema.org/EventScheduled",
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
       "description": "Competiție sportivă pentru studenții Universității „Vasile Alecsandri” din Bacău, cu probe precum flotări, tracțiuni, plank, skanderberg, menținere, împins la piept și traseu.",
@@ -290,6 +290,57 @@
 
     .hero {
       padding: 48px 0 34px;
+    }
+
+    .top-alert-band {
+      padding: 16px 0 0;
+    }
+
+    .top-alert {
+      display: block;
+      padding: 18px 22px;
+      border: 1px solid rgba(214, 255, 71, 0.28);
+      border-radius: 26px;
+      background:
+        radial-gradient(circle at 0% 50%, rgba(214, 255, 71, 0.16), transparent 28%),
+        linear-gradient(135deg, rgba(214, 255, 71, 0.16), rgba(120, 246, 215, 0.08) 38%, rgba(7, 18, 29, 0.95));
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.24);
+    }
+
+    .top-alert-copy {
+      display: grid;
+      gap: 4px;
+      min-width: 0;
+    }
+
+    .top-alert-badge {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      max-width: 100%;
+      min-height: 30px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(214, 255, 71, 0.28);
+      background: rgba(214, 255, 71, 0.14);
+      color: var(--lime, #d6ff47);
+      font-size: 0.74rem;
+      font-weight: 950;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .top-alert-copy strong {
+      display: block;
+      font-size: clamp(1.02rem, 1.8vw, 1.26rem);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .top-alert-copy p {
+      margin: 0;
+      color: rgba(243, 248, 251, 0.88);
+      font-size: 0.97rem;
     }
 
     .hero-grid {
@@ -1356,6 +1407,18 @@
   </header>
 
   <main id="continut">
+    <section class="top-alert-band" aria-label="Anunț important">
+      <div class="container">
+        <div class="top-alert" role="status">
+          <div class="top-alert-copy">
+            <span class="top-alert-badge">Anunț important</span>
+            <strong>Ora de start a competiției a fost actualizată la 10:00.</strong>
+            <p>Power &amp; Fit Student Challenge 2026 începe pe 15 mai 2026, la ora 10:00. Te rugăm să ajungi din timp la locație.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
@@ -1391,7 +1454,7 @@
               </span>
               <div>
                 <span class="meta-label">Data</span>
-                <div class="meta-value">15.05.2026</div>
+                <div class="meta-value">15.05.2026 • ora 10:00</div>
               </div>
             </div>
             <div class="meta-box">
@@ -1458,7 +1521,7 @@
           <article class="card">
             <div class="chip">Format</div>
             <h3>O singură zi de competiție</h3>
-            <p>Competiția are loc pe 15 mai 2026, de la ora 11:00.</p>
+            <p>Competiția are loc pe 15 mai 2026, de la ora 10:00.</p>
           </article>
 
           <article class="card">
@@ -1695,7 +1758,7 @@
           <div class="timeline-item program-card">
             <div class="program-start">
               <strong>Start competiție:</strong>
-              <span>15 mai 2026, ora 11:00</span>
+              <span>15 mai 2026, ora 10:00</span>
             </div>
             <div class="muted program-kicker">Ordinea probelor:</div>
             <ol class="program-order" aria-label="Ordinea probelor">
@@ -1759,7 +1822,7 @@
   </div>
 
   <script>
-    const eventDate = new Date("2026-05-15T11:00:00+03:00").getTime();
+    const eventDate = new Date("2026-05-15T10:00:00+03:00").getTime();
     const countdownStatus = document.getElementById("countdown-status");
     const ids = {
       days: document.getElementById("days"),
